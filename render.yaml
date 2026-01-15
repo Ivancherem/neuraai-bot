@@ -1,0 +1,13 @@
+﻿services:
+  - type: worker
+    name: neuraai-bot-worker
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python super_bot.py
+    envVars:
+      - key: BOT_TOKEN
+        value: 8462465684:AAHdjhf7s4lUdUJXteqwqAvELuuZ-onmVuq7B
+      - key: BOT_NAME
+        value: NeuraAI Assistant
+      - key: BOT_VERSION
+        value: "4.0"
